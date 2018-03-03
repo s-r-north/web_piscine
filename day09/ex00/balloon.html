@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+		.balloon {
+			width: 200px;
+			height: 200px;
+			margin-left: 45vw;
+			margin-top: 45vh;
+			background-color: red;
+			border-radius: 50%;
+		}
+
+		</style>
+		<title>French New Wave Sucks</title>
+		<script type="text/javascript">
+		function inflate() {
+			var x = document.getElementById("b");
+			var width;
+			if (x.style.width == '')
+				width = 210;
+			else
+				width = parseInt(x.style.width, 10) + 10;
+			x.style.width = width + 'px';
+			x.style.height = width + 'px';
+			if (width > 420) {
+				x.style.width = '200px';
+				x.style.height = '200px';
+			}
+			if (x.style.backgroundColor == 'red' || x.style.backgroundColor == '')
+				x.style.backgroundColor = 'green';
+			else if (x.style.backgroundColor == 'green')
+				x.style.backgroundColor = 'blue';
+			else
+				x.style.backgroundColor = 'red';
+		}
+		function deflate() {
+			var x = document.getElementById("b");
+			var width;
+			if (x.style.width == '' || parseInt(x.style.width, 10) == 200)
+				width = 200;
+			else
+				width = parseInt(x.style.width, 10) - 5;
+			x.style.width = width + 'px';
+			x.style.height = width + 'px';
+			if (x.style.backgroundColor == 'red' || x.style.backgroundColor == '')
+				x.style.backgroundColor = 'blue';
+			else if (x.style.backgroundColor == 'blue')
+				x.style.backgroundColor = 'green';
+			else
+				x.style.backgroundColor = 'red';
+		}
+		</script>
+	</head>
+	<body>
+		<div id="b" class="balloon" onclick="inflate()" onmouseout="deflate()"></div>
+	</body>
+</html>

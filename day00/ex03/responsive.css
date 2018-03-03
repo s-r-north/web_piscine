@@ -1,0 +1,132 @@
+body {background-color: #000;}
+h1 {color: #fff; text-align: center;}
+#soft-homo {width: 320px; height: 320px; margin-left: calc(50% - 160px);}
+
+.container {
+	display: grid;
+	margin-left: calc(50% - 45vmax - 19px);
+	grid-gap: 2px;
+	font-size: 1vmax;
+	grid-template-columns: 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax;
+	grid-template-rows: 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax 5vmax;
+}
+
+.Weight {
+	color: #000;
+	text-align: right;
+	vertical-align: top;
+	font-size: 75%;
+	margin: auto;
+	position: absolute;
+	top: 0.1vmax;
+	right: 0.1vmax;
+}
+
+.Elem {
+	color: #000;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 150%;
+	margin: auto;
+	position: absolute;
+	top: 37%;
+	left: 30%;
+	font-weight: bold;
+}
+
+.oneLetter {
+	left: 37%;
+}
+
+.Number {
+	color: #000;
+	text-align: left;
+	vertical-align: bottom;
+	font-size: 75%;
+	margin: auto;
+	position: absolute;
+	bottom: 0.1vmax;
+	left: 0.1vmax;
+}
+
+.Nonmetal {
+	background-color: #00ff00;
+	height: 100%;
+	position: relative;
+}
+
+.Noble {
+	background-color: #0000ff;
+	height: 100%;
+	position: relative;
+}
+
+.Alkali {
+	background-color: #ff7f00;
+	height: 100%;
+	position: relative;
+}
+
+.Alk-Earth {
+	background-color: #ffff00;
+	height: 100%;
+	position: relative;
+}
+
+.Metalloid {
+	background-color: #808080;
+	height: 100%;
+	position: relative;
+}
+
+.Post-Trans {
+	background-color: #196486;
+	height: 100%;
+	position: relative;
+}
+
+.Trans {
+	background-color: #92645d;
+	height: 100%;
+	position: relative;
+}
+
+.Lanth {
+	background-color: #3e0074;
+	height: 100%;
+	grid-row: 9;
+	position: relative;
+}
+
+.Act {
+	background-color: #c55d5d;
+	height: 100%;
+	position: relative;
+	grid-row: 10;
+}
+
+.Other {
+	background-color: #ffffff;
+	height: 100%;
+	position: relative;
+}
+
+.He {
+	grid-column: 18;
+}
+
+.B {
+	grid-column: 13;
+}
+
+.Al {
+	grid-column: 13;
+}
+
+.Hf {
+	grid-column: 4;
+}
+
+.Rf {
+	grid-column: 4;
+}

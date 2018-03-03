@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>2 + 2 is 4, - 1 that's 3 quick maths</title>
+		<script>
+		function quickMaths() {
+			var lhs = document.getElementById('lhs').value;
+			var rhs = document.getElementById('rhs').value;
+			var oper = document.getElementById('oper').value;
+			if ('' == lhs || '' == rhs || isNaN(lhs) || isNaN(rhs)) {
+				document.getElementById('out').innerHTML = 'Error :(';
+				console.log('Error :(');
+				return ;
+			}
+			lhs = +lhs;
+			rhs = +rhs;
+			if (0 > lhs || 0 > rhs || 0 != (lhs % 1) || 0 != (rhs % 1)) {
+				document.getElementById('out').innerHTML = 'Error :(';
+				console.log('Error :(');
+				return ;
+			}
+			if (0 == rhs && ('/' == oper || '%' == oper)) {
+				document.getElementById('out').innerHTML = 'IT\'S OVER 9000!';
+				console.log('IT\'S OVER 9000!');
+				return ;
+			}
+			var res;
+			switch (oper) {
+				case '+':
+					res = lhs + rhs;
+					break;
+				case '-':
+					res = lhs - rhs;
+					break;
+				case '*':
+					res = lhs * rhs;
+					break;
+				case '/':
+					res = lhs / rhs;
+					break;
+				case '%':
+					res = lhs % rhs;
+					break;
+				default:
+					res = "How did you even do this?";
+			}
+			document.getElementById('out').innerHTML = res;
+			console.log(res);
+		}
+		</script>
+	</head>
+	<body>
+		<input id="lhs" type="text" placeholder="enter a positive integer"></input>
+		<select id="oper">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+			<option>%</option>
+		</select>
+		<input id="rhs" type="text" placeholder="enter a positive integer"></input>
+		<input type="submit" value="Try me!" onclick="quickMaths()"></input>
+		<p id="out"></p>
+		<script>
+		var timer = setInterval(alertFunction, 30000);
+
+		function alertFunction() {
+			alert("Please, use me...");
+		}
+		</script>
+	</body>
+</html>

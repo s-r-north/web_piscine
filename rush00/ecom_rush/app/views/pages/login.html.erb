@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+</head>
+<body>
+	<a href="index.html">Home</a>
+	<a href="signup.html">Create an Account</a>
+	<a href="login.html">Log In</a>
+	<a href="cart.html">Your Cart</a>
+	<a href="account.html">Your Account</a>
+	<form action="login.rb" method="get">
+		<p>Login: <input type="text" name="login"></p>
+		<p>Password: <input type="text" name="passwd"></p>
+		<p><input type="submit" name="submit" value="Login" /></p>
+	</form>
+	<p><a href="signup.html">Don't have a Jacuzzi Floozies account? Click Here</a></p>
+</body>
+</html>
+
+<%# TODO: make such that if username/password is bad, redirect to this page with "bad username/password", else go to splash page and open session with 3600s cookie %>
+<%# TODO: CSS styling %>
